@@ -5,6 +5,9 @@ const UserContext = createContext();
 
 export function UserProvider({ children }) {
 
+    //state: Representa o estado atual do seu componente ou aplicação. É o objeto que contém as informações relevantes para o seu componente ou parte da aplicação. No seu exemplo, o state parece ser um objeto com duas propriedades: inputs e registedUsers.
+    //action: Representa a ação que está sendo despachada para atualizar o estado. Uma ação é um objeto que geralmente possui uma propriedade chamada type para indicar o tipo de ação a ser executada. Pode também conter outros dados necessários para realizar a ação. No seu exemplo, o action também parece ser um objeto, e você está usando a propriedade type para determinar que tipo de ação deve ser realizada.
+    // A função reducer que você forneceu é um exemplo típico de como as ações são usadas em um reducer. Dependendo do tipo de ação (action.type), o estado é atualizado de maneira apropriada. Cada case no switch statement representa um tipo de ação e como o estado deve ser atualizado para esse tipo de ação.
     // O reducer é uma função que especifica como o estado da aplicação deve ser atualizado em resposta a uma ação.Ele recebe o estado atual e uma ação, e com base no tipo da ação, realiza as devidas atualizações no estado.
     function reducer(state, action) {
 
